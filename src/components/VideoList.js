@@ -56,7 +56,7 @@ function VideoList() {
             <div className="playText flex">
               <span className="playBtn"><PlayArrowRoundedIcon/></span>
               <div>
-                <div className="date colorW50 font10">{videoLists.date}</div>
+                <div className="date colorW50 font12">{videoLists.date}</div>
                 <div className="title font18">{videoLists.title}</div>
               </div>
             </div>

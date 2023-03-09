@@ -37,7 +37,7 @@ function PatchNotes() {
           <li key={i}>
             <Link to="/" className="flex jcBtw">
               <h3 className="font16">{patch.title}</h3>
-              <div className="textEnd font10">
+              <div className="textEnd font12">
                 <p className="colorW50">
                   <span className="colorRed">{patch.date}</span>주 전
                 </p>

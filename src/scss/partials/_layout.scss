@@ -29,34 +29,77 @@ body {
   }
 }
 
+// position
+.positionRe {
+  position: relative;
+} 
+
+// width
+.w100 {
+  width: 100%;
+}
+
 // padding
+.pt8 {
+  padding-top: 8px;
+}
+.pr8 {
+  padding-right: 8px;
+}
 .p16 {
-  padding: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .pr16 {
   padding-right: 16px;
 }
 
 // margin
+.mb0 {
+  margin-bottom: 0;
+}
+.mb4 {
+  margin-bottom: 4px;
+}
+.mr8 {
+  margin-right: 8px;
+}
+.mb8 {
+  margin-bottom: 8px;
+}
 .m16 {
   margin: 0 16px;
+}
+.mb16 {
+  margin-bottom: 16px;
 }
 .mb24 {
   margin-bottom: 24px;
 }
-
+.mb36 {
+  margin-bottom: 36px;
+}
+.mb100 {
+  margin-bottom: 100px;
+}
 // color
+.colorW {
+  color: $white;
+}
 .colorW50 {
   color: $white50;
 }
 .colorRed {
   color: $red;
 }
+.colorBlue {
+  color: $blue;
+}
+.colorY {
+  color: $yellow;
+}
 
 // font
-.font10 {
-  font-size: 12px;
-}
 .font12 {
   font-size: $font12;
 }
@@ -66,11 +109,43 @@ body {
 .font18 {
   font-size: 18px;
 }
+.font22 {
+  font-size: 22px;
+}
 .font24 {
   font-size: 24px;
 }
 .font26 {
   font-size: 26px;
+}
+.font30 {
+  font-size: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  border-radius: 5px;
+  margin-bottom: 24px;
+  border: 2px solid transparent;
+  background-color: $white30;
+  transition: 0.3s;
+  &:focus,
+  &:focus::placeholder,
+  &::placeholder {
+    background-color: $white10;
+    border: 2px solid $blue;
+  }
+  &[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .letterSpacing {
@@ -78,7 +153,10 @@ body {
 }
 
 .mainWrap {
-  padding-top: 36px;
+  padding-top: 45px;
+  &.pt69 {
+    padding-top: 69px;
+  }
 }
 .section {
   padding-bottom: 48px;
@@ -87,9 +165,23 @@ body {
   &.pb0 {
     padding-bottom: 0;
   }
+  &.mb0 {
+    margin-bottom: 0;
+  }
 }
+
+//border
 .borderNone {
   border: none;
+}
+.radius50 {
+  border-radius: 50%;
+}
+.radius5 {
+  border-radius: 5px;
+}
+.radius5 {
+  border-radius: 5px;
 }
 
 header {
@@ -102,6 +194,9 @@ header {
   img {
     height: 25px;
     margin: 10px 0;
+  }
+  .headerHeight {
+    line-height: 45px;
   }
 }
 
@@ -203,7 +298,7 @@ header {
         overflow: hidden;
         text-overflow: ellipsis;
       }
-      p, 
+      p,
       del {
         color: $white50;
       }
@@ -218,7 +313,13 @@ header {
     }
   }
 }
-
+// btn
+.btnWide {
+  width: 100%;
+  height: 36px;
+  background: $white30;
+  border-radius: 5px;
+}
 // play
 .videoList {
   position: relative;
@@ -277,6 +378,7 @@ header {
     }
   }
 }
+
 .moreBtn {
   padding-right: 16px;
   color: $white50;
@@ -287,6 +389,69 @@ header {
     padding: 8px 0;
     border-bottom: 1px solid $white50;
   }
+}
+
+.mypageCont {
+  width: 100%;
+  height: 130px;
+  padding: 0 16px;
+  background: $white10;
+  border-radius: 5px;
+  img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+}
+.championList {
+  width: 98px;
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  progress {
+    width: 100%;
+    height: 12px;
+    margin-bottom: 2px;
+    background: $white30;
+    border-radius: 10px;
+    &.red {
+      &::-webkit-progress-value {
+        background: $red;
+      }
+    }
+    &.blue {
+      &::-webkit-progress-value {
+        background: $blue;
+      }
+    }
+  }
+}
+.scoreWrap {
+  height: 180px;
+  background: $white10;
+  padding: 16px;
+  border-radius: 5px;
+  margin-top: 24px;
+}
+
+.myPageList {
+  li {
+    padding-bottom: 14px;
+    border-bottom: 1px solid $white30;
+    margin-bottom: 14px;
+  }
+}
+
+.textWrap {
+  background: linear-gradient(rgba(0,0,0,0.1) 60%, #000);;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* 키프레임으로 메뉴들이 나타날때 효과를 줌 */

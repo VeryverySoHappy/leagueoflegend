@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Banner from "../../components/Banner";
 import ItemList from '../../components/ItemList';
 import VideoList from '../../components/VideoList';
@@ -8,6 +8,7 @@ import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRigh
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
+import HomeModal from '../../components/Modal/HomeModal';
 
 const bannerImgs = [
   {
@@ -127,6 +128,10 @@ const itemList02 = [
 ]
 
 function Index() {
+  const [modal, setModal] = useState(false);
+  const closeModal = (state) => {
+    setModal(false);
+  };
   return (
     <div className="mainWrap">
       <div className="section borderNone pb0">
@@ -158,6 +163,7 @@ function Index() {
         </div>
         <PatchNotes/>
       </div>
+      {modal ? <HomeModal ></HomeModal> : null}
     </div>
   )
 }
