@@ -9,6 +9,8 @@ import Streaming from "./pages/Streaming";
 import { default as MyPage } from "./pages/myPage/Index";
 import { default as Join } from "./pages/myPage/Join";
 import HomeModal from "./components/Modal/HomeModal";
+import Community from "./pages/Community";
+import Sports from "./pages/Sports";
 
 function App() {
 
@@ -28,13 +30,37 @@ function App() {
               </>
             }
           />
-          {/* home */}
+          {/* sports */}
+          <Route
+            path="/sports"
+            element={
+              <>
+                <Header title={"스포츠"} />
+                <Sports />
+                <Nav />
+                <BtnTop />
+              </>
+            }
+          />
+          {/* streaming */}
           <Route
             path="/streaming"
             element={
               <>
                 <Header title={"스트리밍"} />
                 <Streaming />
+                <Nav />
+                <BtnTop />
+              </>
+            }
+          />
+          {/* community */}
+          <Route
+            path="/community"
+            element={
+              <>
+                <Header title={"스트리밍"} />
+                <Community />
                 <Nav />
                 <BtnTop />
               </>
