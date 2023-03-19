@@ -79,6 +79,38 @@ const itemList = [
     price: "1,080"
   },
 ]
+const videoList = [
+  {
+    src: require("../../assets/img/video/video_01.jpg"),
+    alt: "영겁의 귀로",
+    date: "March 10, 2023",
+    title: "영겁의 귀로",
+  },
+  {
+    src: require("../../assets/img/video/video_02.jpg"),
+    alt: "챔피언, 세계관, 모드 등에 관하여",
+    date: "March 03, 2023",
+    title: "챔피언, 세계관에 관하여",
+  },
+  {
+    src: require("../../assets/img/video/video_03.jpg"),
+    alt: "LoL 개발 현황",
+    date: "Feb 20, 2023",
+    title: "LoL 개발 현황",
+  },
+  {
+    src: require("../../assets/img/video/video_04.jpg"),
+    alt: "2023 설맞이 축제 시네마틱",
+    date: "Feb 05, 2023",
+    title: "2023 설맞이 축제 시네마틱",
+  },
+  {
+    src: require("../../assets/img/video/video_05.jpg"),
+    alt: "나만의 상점을 만나보세요",
+    date: "Jan 28, 2023",
+    title: "나만의 상점을 만나보세요",
+  },
+];
 const itemList02 = [
   {
     src: require("../../assets/img/item/item_01.jpg"),
@@ -145,7 +177,7 @@ function Index() {
       <div className="section">
         <h2 className="title">2023 시즌</h2>
         <p className="subTitle">협곡을 덮은 안개와 그림자 너머에 새로운 시작</p>
-        <VideoList/>
+        <VideoList videoList={videoList}/>
       </div>
       <div className="section">
         <div className="flex jcBtw">
