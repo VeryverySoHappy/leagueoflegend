@@ -16,9 +16,7 @@ function ItemList(props) {
         delay: 1000,
         disableOnInteraction: false
       }}
-      loopAdditionalSlides={1}
       slideToClickedSlide={true}
-      loop={true}
     >
       {itemList.map((itemLists, i) => {
           return (
