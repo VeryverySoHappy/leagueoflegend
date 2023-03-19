@@ -146,6 +146,18 @@ body {
   position: relative;
 }
 
+.positionAb {
+  position: absolute;
+}
+.positionAb.lb10 {
+  left: 10px;
+  bottom: 16px;
+}
+.positionAb.rb16 {
+  right: 16px;
+  bottom: 16px;
+}
+
 .w100 {
   width: 100%;
 }
@@ -158,6 +170,11 @@ body {
   padding-right: 8px;
 }
 
+.p10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .p16 {
   padding-left: 16px;
   padding-right: 16px;
@@ -165,6 +182,11 @@ body {
 
 .pr16 {
   padding-right: 16px;
+}
+
+.ptb16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .mb0 {
@@ -181,6 +203,14 @@ body {
 
 .mb8 {
   margin-bottom: 8px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.mr10 {
+  margin-right: 10px;
 }
 
 .m16 {
@@ -205,6 +235,10 @@ body {
 
 .colorW {
   color: #fff;
+}
+
+.colorW30 {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .colorW50 {
@@ -455,6 +489,9 @@ header .headerHeight {
 .videoList.swiper {
   margin-left: 16px;
 }
+.videoList.swiper.ml0 {
+  margin-left: 0;
+}
 .videoList .swiper-wrapper {
   width: 276px;
 }
@@ -565,13 +602,26 @@ header .headerHeight {
   margin-bottom: 14px;
 }
 
+.streaming {
+  position: relative;
+  border-radius: 5px;
+}
+.streaming img {
+  border-radius: 5px;
+}
+
 .textWrap {
-  background: linear-gradient(rgba(0, 0, 0, 0.1) 60%, #000);
+  background: linear-gradient(rgba(0, 0, 0, 0.1) 40%, #000);
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 5px;
+}
+
+.icon {
+  width: 40px;
 }
 
 /* 키프레임으로 메뉴들이 나타날때 효과를 줌 */
