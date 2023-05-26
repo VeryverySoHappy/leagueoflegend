@@ -1,5 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, {Autoplay} from "swiper";
+SwiperCore.use([ Autoplay])
 
 function Banner(props) {
   const { bannerImgs } = props;
@@ -7,10 +9,9 @@ function Banner(props) {
     <Swiper
       slidesPerView="auto"
       autoplay={{
-        delay: 1000,
+        delay: 3000,
         disableOnInteraction: false,
       }}
-      loopAdditionalSlides={1}
       slideToClickedSlide={true}
       loop={true}
     >
