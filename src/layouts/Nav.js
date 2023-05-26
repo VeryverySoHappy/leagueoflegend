@@ -5,6 +5,7 @@ import SportsEsportsOutlinedIcon from "@mui/icons-material/SportsEsportsOutlined
 import LiveTvOutlinedIcon from "@mui/icons-material/LiveTvOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
+import ContactPageIcon from '@mui/icons-material/ContactPage';
 
 function Nav() {
   return (
@@ -38,6 +39,12 @@ function Nav() {
           <NavLink to="/myPage" className={({ isActive }) => (isActive ? "on" : "")}>
             <PermIdentityOutlinedIcon />
             <span>마이페이지</span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/join" className={({ isActive }) => (isActive ? "on" : "")}>
+            <ContactPageIcon />
+            <span>회원가입</span>
           </NavLink>
         </li>
       </ul>

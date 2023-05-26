@@ -484,7 +484,7 @@ function Join() {
             </span>
           </div>
         </div>
-        {check1 && check2 ? (
+        {/* {check1 && check2 ? (
           <div
             className="btnWide btnBottom"
             onClick={() => {
@@ -502,7 +502,37 @@ function Join() {
             가입완료
           </div>
         ) : (
-          <div className="btnWide btnBottom disable">가입완료</div>
+          <div 
+            className="btnWide btnBottom disable"
+            onClick={()=>{
+              
+            }}
+          >
+            가입완료
+          </div>
+        )} */}
+        {check1 && check2 ? (
+          <div 
+            className="btnWide btnBottom"
+            onClick={()=>{handleTab(1);}}
+          >가입완료</div>
+        ) : (
+          <div
+            className="btnWide btnBottom disable"
+            onClick={() => {
+              if (check1 && check2) {
+                handleTab(1);
+              } else if (check1) {
+                confirmModal2();
+                setText("개인정보수집에 동의하시겠습니까?");
+              } else {
+                confirmModal();
+                setText("서비스이용약관에 동의하시겠습니까?");
+              }
+            }}
+          >
+            가입완료
+          </div>
         )}
       </div>
       <div className={`tabContent ${on === 1 ? "on" : ""}`}>

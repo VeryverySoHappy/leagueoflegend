@@ -572,7 +572,7 @@ header .headerHeight {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translate(-50%);
-  bottom: 16px;
+  bottom: -90px;
   width: calc(100% - 32px);
 }
 

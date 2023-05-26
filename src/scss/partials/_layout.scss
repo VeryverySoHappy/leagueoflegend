@@ -366,7 +366,7 @@ header {
   font-size: $font18;
   &.btnBottom {
     @include center(absolute, "horizontal");
-    bottom: 16px;
+    bottom: -90px;
     width: calc(100% - 32px);
   }
   &.disable {
