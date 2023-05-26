@@ -430,7 +430,6 @@ function Join() {
           <div className="checkWrap flex jc">
             <input
               type="checkbox"
-              name=""
               id="agreeAll"
               onChange={() => {
                 if (!check1 || check2) {
@@ -449,7 +448,6 @@ function Join() {
             <div className="flex jcStart">
               <input
                 type="checkbox"
-                name=""
                 id="agreeService"
                 ref={agreeInput}
                 onChange={() => (!check1 ? setCheck1(true) : setCheck1(false))}
@@ -470,7 +468,6 @@ function Join() {
             <div className="flex jcStart">
               <input
                 type="checkbox"
-                name=""
                 id="agreePersonal"
                 onChange={() => (!check2 ? setCheck2(true) : setCheck2(false))}
                 checked={check2}
