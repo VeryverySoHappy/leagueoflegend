@@ -12,10 +12,6 @@ function ItemList(props) {
       className="itemList"
       slidesPerView='auto'
       spaceBetween={16}
-      autoplay={{
-        delay: 1000,
-        disableOnInteraction: false
-      }}
       slideToClickedSlide={true}
     >
       {itemList.map((itemLists, i) => {
