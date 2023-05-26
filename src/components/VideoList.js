@@ -10,10 +10,6 @@ function VideoList(props) {
       className="videoList"
       slidesPerView="auto"
       spaceBetween={16}
-      autoplay={{
-        delay: 1000,
-        disableOnInteraction: false,
-      }}
       slideToClickedSlide={true}
     >
       {videoList.map((videoLists, i) => {
