@@ -426,7 +426,7 @@ function Join() {
           {ToastStatus && <Toast msg={ToastMsg} />}
         </form>
         <h3>필수 약관 동의</h3>
-        <div className="agreeWrap">
+        <div className="agreeWrap mb36">
           <div className="checkWrap flex jc">
             <input
               type="checkbox"
@@ -484,41 +484,14 @@ function Join() {
             </span>
           </div>
         </div>
-        {/* {check1 && check2 ? (
-          <div
-            className="btnWide btnBottom"
-            onClick={() => {
-              if (check1 && check2) {
-              } else if (check1) {
-                confirmModal2();
-                setText("개인정보수집에 동의하시겠습니까?");
-              } else {
-                confirmModal();
-                setText("서비스이용약관에 동의하시겠습니까?");
-              }
-              handleTab(1);
-            }}
-          >
-            가입완료
-          </div>
-        ) : (
-          <div 
-            className="btnWide btnBottom disable"
-            onClick={()=>{
-              
-            }}
-          >
-            가입완료
-          </div>
-        )} */}
         {check1 && check2 ? (
           <div 
-            className="btnWide btnBottom"
+            className="btnWide"
             onClick={()=>{handleTab(1);}}
           >가입완료</div>
         ) : (
           <div
-            className="btnWide btnBottom disable"
+            className="btnWide disable"
             onClick={() => {
               if (check1 && check2) {
                 handleTab(1);
