@@ -5,7 +5,7 @@ function ChampionList(props) {
 
   return (
     <>
-      <ul className="flex">
+      <ul className="flex jcBtw">
         {list.map((list, i) => {
           return (
             <li key={i} className="championList">

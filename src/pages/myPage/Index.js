@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Score from "../../components/Score";
 import Pay from "../../components/Pay";
-import myPageIcon from "../../assets/img/item/item_01.jpg";
+import myPageIcon from "../../assets/img/item/item01.jpg";
 import Accordion from "../../components/Accordion";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 import ChampionList from "../../components/ChampionList";
 
 const pay = {
-  src: require("../../assets/img/item/item_01.jpg"),
+  src: require("../../assets/img/item/item01.jpg"),
   id: "아그걸님이왜",
   rp: 60,
   be: "2.835",

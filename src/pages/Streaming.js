@@ -40,70 +40,71 @@ const list03 = [
     title: "정정당당한 정글러 티모",
   },
 ]
-const videoList = [
+const videoList01 = [
   {
     src: require("../assets/img/video/videoList01.jpg"),
     alt: "LoL 13.06 PBE 스킨 미리보기 #04",
     num: "조회수 9천회",
-    title: "LoL 13.06 PBE 스킨 미리보기 #04",
+    title: "LoL 13.06 PBE 스킨\n미리보기 #04",
   },
   {
-    src: require("../assets/img/video/video_02.jpg"),
+    src: require("../assets/img/video/videoList02.jpg"),
     alt: "진 장인만 보이는 궁각 #리그오브레전드",
     num: "조회수 81만회",
-    title: "진 장인만 보이는 궁각 \n #리그오브레전드",
+    title: "진 장인만 보이는 궁각\n#리그오브레전드",
   },
   {
-    src: require("../assets/img/video/video_03.jpg"),
+    src: require("../assets/img/video/videoList03.jpg"),
     alt: "LoL 13.06 PBE 스킨 미리보기 #03",
     num: "조회수 1.3만회",
-    title: "LoL 13.06 PBE 스킨 미리보기 #03",
+    title: "LoL 13.06 PBE 스킨\n미리보기 #03",
   },
   {
-    src: require("../assets/img/video/video_04.jpg"),
+    src: require("../assets/img/video/videoList04.jpg"),
     alt: "LoL 13.06 PBE 스킨 미리보기 #02",
     num: "조회수 9천회",
-    title: "LoL 13.06 PBE 스킨 미리보기 #02",
+    title: "LoL 13.06 PBE 스킨\n미리보기 #02",
   },
   {
-    src: require("../assets/img/video/video_05.jpg"),
+    src: require("../assets/img/video/videoList05.jpg"),
     alt: "롤 역사상 가장 웃기다고 평가 받는 시네마틱 #lol #시네마틱",
     num: "조회수 524만회",
-    title: "롤 역사상 가장 웃기다고 평가 받는 시네마틱 \n #lol #시네마틱",
+    title: "롤 역사상 가장 웃기다고\n평가 받는 시네마틱\n#lol #시네마틱",
   },
 ];
 const videoList02 = [
   {
-    src: require("../assets/img/video/video_01.jpg"),
-    alt: "영겁의 귀로",
-    date: "March 10, 2023",
-    title: "영겁의 귀로",
+    src: require("../assets/img/video/videoList06.jpg"),
+    alt: "소환사의 협곡에 놀러온 오리아나",
+    num: "조회수 23만회",
+    title: `소환사의 협곡에 놀러온\n오리아나`,
   },
   {
-    src: require("../assets/img/video/video_02.jpg"),
-    alt: "챔피언, 세계관, 모드 등에 관하여",
-    date: "March 03, 2023",
-    title: "챔피언, 세계관에 관하여",
+    src: require("../assets/img/video/videoList07.jpg"),
+    alt: "카르마로 캐리하는 방법\n#13.06카르마 스킨",
+    num: "조회수 5천회",
+    title: "카르마로 캐리하는 방법\n#13.06카르마 스킨",
   },
   {
-    src: require("../assets/img/video/video_03.jpg"),
-    alt: "LoL 개발 현황",
-    date: "Feb 20, 2023",
-    title: "LoL 개발 현황",
+    src: require("../assets/img/video/videoList08.jpg"),
+    alt: "험난한 정글을 슬기롭게\n헤쳐나가는 방법",
+    num: "조회수 23만회",
+    title: "험난한 정글을 슬기롭게\n헤쳐나가는 방법",
   },
   {
-    src: require("../assets/img/video/video_04.jpg"),
-    alt: "2023 설맞이 축제 시네마틱",
-    date: "Feb 05, 2023",
-    title: "2023 설맞이 축제 시네마틱",
+    src: require("../assets/img/video/videoList09.jpg"),
+    alt: "이 맛에 정화들지\n#리그오브레전드 #lol",
+    num: "조회수 11만회",
+    title: "이 맛에 정화들지\n#리그오브레전드 #lol",
   },
   {
-    src: require("../assets/img/video/video_05.jpg"),
-    alt: "나만의 상점을 만나보세요",
-    date: "Jan 28, 2023",
-    title: "나만의 상점을 만나보세요",
+    src: require("../assets/img/video/videoList10.jpg"),
+    alt: "에어본도\n풀어버리는 스킬들",
+    num: "조회수 34만회",
+    title: "에어본도\n풀어버리는 스킬들",
   },
 ];
+
 
 function Streaming() {
   return (
@@ -112,13 +113,13 @@ function Streaming() {
         <StreamingLarge list={list01}/>
       </div>
       <div className="mb24">
-        <VideoList videoList={videoList} playBtn/>
+        <VideoList videoList={videoList01} playBtn/>
       </div>
       <div className="mb24 p16">
         <StreamingLarge list={list02}/>
       </div>
       <div className="mb24">
-        <VideoList videoList={videoList} playBtn/>
+        <VideoList videoList={videoList02} playBtn/>
       </div>
       <div className="section p16 borderNone mb0">
         <StreamingLarge list={list03}/>

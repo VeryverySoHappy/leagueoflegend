@@ -34,7 +34,7 @@ const bannerImgs = [
 ]
 const itemList = [
   {
-    src: require("../../assets/img/item/item_01.jpg"),
+    src: require("../../assets/img/item/item01.jpg"),
     alt: "신화 창조자 이렐리아",
     name: "신화 창조자 이렐리아",
     explain: "2023 설맞이 축제",
@@ -43,7 +43,7 @@ const itemList = [
     price: "1,456"
   },
   {
-    src: require("../../assets/img/item/item_02.jpg"),
+    src: require("../../assets/img/item/item02.jpg"),
     alt: "신화 창조자 갈리오",
     name: "신화 창조자 갈리오",
     explain: "2023 설맞이 축제",
@@ -52,7 +52,7 @@ const itemList = [
     price: "1,080"
   },
   {
-    src: require("../../assets/img/item/item_03.jpg"),
+    src: require("../../assets/img/item/item03.jpg"),
     alt: "신화 창조자 가렌",
     name: "신화 창조자 가렌",
     explain: "2023 설맞이 축제",
@@ -61,7 +61,7 @@ const itemList = [
     price: "1,080"
   },
   {
-    src: require("../../assets/img/item/item_04.jpg"),
+    src: require("../../assets/img/item/item04.jpg"),
     alt: "신화 창조자 자이라",
     name: "신화 창조자 자이라",
     explain: "2023 설맞이 축제",
@@ -70,7 +70,7 @@ const itemList = [
     price: "1,456"
   },
   {
-    src: require("../../assets/img/item/item_05.jpg"),
+    src: require("../../assets/img/item/item05.jpg"),
     alt: "신화 창조자 시비르",
     name: "신화 창조자 시비르",
     explain: "2023 설맞이 축제",
@@ -113,49 +113,49 @@ const videoList = [
 ];
 const itemList02 = [
   {
-    src: require("../../assets/img/item/item_01.jpg"),
-    alt: "신화 창조자 이렐리아",
-    name: "신화 창조자 이렐리아",
-    explain: "2023 설맞이 축제",
-    discountPrice: "1,820",
-    discountRate: "20",
-    price: "1,456"
+    src: require("../../assets/img/item/item06.jpg"),
+    alt: "시바견 유미",
+    name: "시바견 유미",
+    explain: "파자마 코스프레",
+    discountPrice: "1350",
+    discountRate: "27",
+    price: "975"
   },
   {
-    src: require("../../assets/img/item/item_02.jpg"),
-    alt: "신화 창조자 갈리오",
-    name: "신화 창조자 갈리오",
-    explain: "2023 설맞이 축제",
-    discountPrice: "1,350",
-    discountRate: "20",
-    price: "1,080"
+    src: require("../../assets/img/item/item07.jpg"),
+    alt: "니달리냥",
+    name: "니달리냥",
+    explain: "파자마 코스프레",
+    discountPrice: "1350",
+    discountRate: "27",
+    price: "975"
   },
   {
-    src: require("../../assets/img/item/item_03.jpg"),
-    alt: "신화 창조자 가렌",
-    name: "신화 창조자 가렌",
-    explain: "2023 설맞이 축제",
-    discountPrice: "1,350",
-    discountRate: "20",
-    price: "1,080"
+    src: require("../../assets/img/item/item08.jpg"),
+    alt: "개밥그릇 클레드",
+    name: "개밥그릇 클레드",
+    explain: "파자마 코스프레",
+    discountPrice: "1350",
+    discountRate: "27",
+    price: "975"
   },
   {
-    src: require("../../assets/img/item/item_04.jpg"),
-    alt: "신화 창조자 자이라",
-    name: "신화 창조자 자이라",
-    explain: "2023 설맞이 축제",
-    discountPrice: "1,820",
-    discountRate: "20",
-    price: "1,456"
+    src: require("../../assets/img/item/item09.jpg"),
+    alt: "멍멍양 킨드레드",
+    name: "멍멍양 킨드레드",
+    explain: "파자마 코스프레",
+    discountPrice: "1350",
+    discountRate: "30",
+    price: "944"
   },
   {
-    src: require("../../assets/img/item/item_05.jpg"),
-    alt: "신화 창조자 시비르",
-    name: "신화 창조자 시비르",
-    explain: "2023 설맞이 축제",
-    discountPrice: "1,350",
-    discountRate: "20",
-    price: "1,080"
+    src: require("../../assets/img/item/item10.jpg"),
+    alt: "우주 그루브 타릭",
+    name: "우주 그루브 타릭",
+    explain: "우즈 그루브",
+    discountPrice: "1350",
+    discountRate: "45",
+    price: "742"
   },
 ]
 
