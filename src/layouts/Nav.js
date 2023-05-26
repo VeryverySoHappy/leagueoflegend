@@ -16,24 +16,24 @@ function Nav() {
             <span>홈</span>
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/sports" className={({ isActive }) => (isActive ? "on" : "")}>
             <SportsEsportsOutlinedIcon />
             <span>e스포츠</span>
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to="/streaming" className={({ isActive }) => (isActive ? "on" : "")}>
             <LiveTvOutlinedIcon />
             <span>스트리밍</span>
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/community" className={({ isActive }) => (isActive ? "on" : "")}>
             <QuestionAnswerOutlinedIcon />
             <span>커뮤니티</span>
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to="/myPage" className={({ isActive }) => (isActive ? "on" : "")}>
             <PermIdentityOutlinedIcon />
